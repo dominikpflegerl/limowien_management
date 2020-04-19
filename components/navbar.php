@@ -22,11 +22,10 @@
       <li class="nav-item dropdown border-bottom navbar-admin">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrator</a>
         <div class="dropdown-menu dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item bg-primary" href="#">Benutzer</a>
-          <a class="dropdown-item bg-primary" href="#">Protokolle</a>
-          <a class="dropdown-item bg-primary" href="#">Fahrzeuge</a>
-          <a class="dropdown-item bg-primary" href="#">Ͱ Schaden</a>
-          <a class="dropdown-item bg-primary" href="#">Ͱ Protokolle</a>
+          <a class="dropdown-item bg-primary" href="/admincp/user.php">Benutzer</a>
+					<a class="dropdown-item bg-primary" href="/admincp/vehicle.php">Fahrzeuge</a>
+          <a class="dropdown-item bg-primary" href="/admincp/vehicle_protocol.php">Protokolle</a>
+          <a class="dropdown-item bg-primary" href="/admincp/vehicle_damage.php">Schaden</a>
         </div>
       </li>
     </ul>
