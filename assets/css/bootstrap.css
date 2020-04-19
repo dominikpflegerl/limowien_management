@@ -69,12 +69,17 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 	body {
 		width: 66% !important;
 	}
+	.navbar-admin {
+		margin-left: 3rem !important;
+		background: rgba(134,0,2,0.83);
+	}
 }
 
 @media (max-width : 1200px) {
-   .navbar-desktop {
-        display: none !important;
-    }
+  .navbar-desktop {
+  	display: none !important;
+  }
+
 }
 
 body {

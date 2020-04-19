@@ -12,14 +12,15 @@
 			<li class="nav-item">
         <a class="nav-link border-bottom" href="/schedule.php">Dienstplan</a>
       </li>
-			<li class="nav-item">
-        <a class="nav-link border-bottom" href="/protocol.php">Protokolle</a>
+			<li class="nav-item dropdown border-bottom">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PKW</a>
+        <div class="dropdown-menu dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item bg-primary" href="#">Protokolle</a>
+          <a class="dropdown-item bg-primary" href="#">Schaden</a>
+        </div>
       </li>
-			<li class="nav-item">
-        <a class="nav-link border-bottom" href="#">Fahrzeugschaden</a>
-      </li>
-      <li class="nav-item dropdown border-bottom">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+      <li class="nav-item dropdown border-bottom navbar-admin">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrator</a>
         <div class="dropdown-menu dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item bg-primary" href="#">Benutzer</a>
           <a class="dropdown-item bg-primary" href="#">Protokolle</a>
