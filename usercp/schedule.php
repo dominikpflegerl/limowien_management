@@ -43,7 +43,10 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {
   	<!--/.Navbar -->
 		
 		<div class="py-3 px-4 mt-3 bg-primary rounded">
-			<div class="mt-3 jquery-script-center">
+			
+			<h1>Dienstplan</h1>
+			
+			<div class="mt-3">
 				<table class="table bg-primary table-responsive overflow-auto">
 					<thead>
 						<tr>
