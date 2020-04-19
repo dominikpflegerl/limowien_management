@@ -4,7 +4,7 @@ session_start();
 
 // Check if the user is logged in, if not then redirect him to login page
 if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {
-  header( "location: /index.php" );
+  header( "location: ../index.php" );
   exit;
 }
 
@@ -61,7 +61,7 @@ $date = date('d.m.Y H:i', time());
 
 				$.ajax({
 					type: 'GET',
-					url: 'assets/php/get_damagelist.php?vehicle='+selectedID,
+					url: '../assets/php/get_damagelist.php?vehicle='+selectedID,
 					success: function(response){					
 						document.getElementById("modalListDamageBody").innerHTML = response;
 					}
@@ -83,7 +83,7 @@ $date = date('d.m.Y H:i', time());
  	<div class="p-3">
 		
 		<!--Navbar -->
-		<?php include_once('components\navbar.php')	?>
+		<?php include_once('../components/navbar.php')	?>
   	<!--/.Navbar -->
 		
 		<div class="py-3 px-4 mt-3 bg-primary rounded">
@@ -96,7 +96,7 @@ $date = date('d.m.Y H:i', time());
 							<select id="protocol" name="protocol" class="custom-select">
 									<option disabled selected style="display: none" value="0">Protokoll auswählen...</option>
 									<?php  
-										require_once('assets/php/connect_db.php');
+										require_once('../assets/php/connect_db.php');
 										mysqli_select_db($link, 'web_limowien') or die('Cannot select database. ' . mysqli_error());
 										$sql = mysqli_query($link, "SELECT * FROM protocol_typ;");
 										while ($row = mysqli_fetch_array($sql)) {
@@ -139,7 +139,7 @@ $date = date('d.m.Y H:i', time());
 							<select id="vehicle" name="vehicle" class="custom-select">
 									<option disabled selected style="display: none" value="0">Fahrzeug auswählen...</option>
 									<?php  
-										require_once('assets/php/connect_db.php');
+										require_once('../assets/php/connect_db.php');
 										mysqli_select_db($link, 'web_limowien') or die('Cannot select database. ' . mysqli_error());
 										$sql = mysqli_query($link, "SELECT vehicle_id, license, model FROM vehicle");
 										while ($row = mysqli_fetch_array($sql)) {

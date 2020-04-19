@@ -10,19 +10,20 @@
 				<a class="nav-link border-bottom font-weight-bold" href="/index.php">Home</a>
       </li>
 			<li class="nav-item">
-        <a class="nav-link border-bottom" href="/schedule.php">Dienstplan</a>
+        <a class="nav-link border-bottom" href="/usercp/schedule.php">Dienstplan</a>
       </li>
 			<li class="nav-item dropdown border-bottom">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PKW</a>
         <div class="dropdown-menu dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item bg-primary" href="#">Protokolle</a>
-          <a class="dropdown-item bg-primary" href="#">Schaden</a>
+          <a class="dropdown-item bg-primary" href="/usercp/vehicle_protocol.php">Protokolle</a>
+          <a class="dropdown-item bg-primary" href="/usercp/vehicle_damage.php">Schaden</a>
         </div>
       </li>
       <li class="nav-item dropdown border-bottom navbar-admin">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrator</a>
         <div class="dropdown-menu dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
           <a class="dropdown-item bg-primary" href="/admincp/user.php">Benutzer</a>
+          <a class="dropdown-item bg-primary" href="/admincp/schedule.php">Dienstplan</a>
 					<a class="dropdown-item bg-primary" href="/admincp/vehicle.php">Fahrzeuge</a>
           <a class="dropdown-item bg-primary" href="/admincp/vehicle_protocol.php">Protokolle</a>
           <a class="dropdown-item bg-primary" href="/admincp/vehicle_damage.php">Schaden</a>
