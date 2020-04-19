@@ -87,8 +87,10 @@ $date = date('d.m.Y H:i', time());
   	<!--/.Navbar -->
 		
 		<div class="py-3 px-4 mt-3 bg-primary rounded">
-			<form id="protocolform" action="assets/php/insert_protocol_drop.php" method="post">
-				
+			
+			<h1>Fahrzeugschaden hinzufügen:</h1>
+			
+			<form id="protocolform" action="assets/php/insert_protocol_drop.php" method="post">	
 				<!-- Protokoll Auswahl -->      
 					<div class="form-group row">
 						<label for="protocol" class="col-3 col-form-label text-white font-weight-bold">Art</label> 
