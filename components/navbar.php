@@ -10,19 +10,22 @@
 				<a class="nav-link border-bottom font-weight-bold" href="/index.php">Home</a>
       </li>
 			<li class="nav-item">
+        <a class="nav-link border-bottom" href="/schedule.php">Dienstplan</a>
+      </li>
+			<li class="nav-item">
         <a class="nav-link border-bottom" href="/protocol.php">Protokolle</a>
       </li>
 			<li class="nav-item">
-        <a class="nav-link border-bottom" href="/schedule.php">Dienstplan</a>
+        <a class="nav-link border-bottom" href="#">Fahrzeugschaden</a>
       </li>
       <li class="nav-item dropdown border-bottom">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liste</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
         <div class="dropdown-menu dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item bg-primary" href="../list_vehicle.php">Fahrzeuge</a>
-          <a class="dropdown-item bg-primary" href="../list_user.php">Benutzer</a>
-          <a class="dropdown-item bg-primary" href="../list_damage.php">Schaden</a>
-          <a class="dropdown-item bg-primary" href="#">Abstellprotokolle</a>
-          <a class="dropdown-item bg-primary" href="#">Übernahmeprotokolle</a>
+          <a class="dropdown-item bg-primary" href="#">Benutzer</a>
+          <a class="dropdown-item bg-primary" href="#">Protokolle</a>
+          <a class="dropdown-item bg-primary" href="#">Fahrzeuge</a>
+          <a class="dropdown-item bg-primary" href="#">Ͱ Schaden</a>
+          <a class="dropdown-item bg-primary" href="#">Ͱ Protokolle</a>
         </div>
       </li>
     </ul>

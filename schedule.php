@@ -43,7 +43,7 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {
   	<!--/.Navbar -->
 		
 		<div class="py-3 px-4 mt-3 bg-primary rounded">
-			<div class="mt-3">
+			<div class="mt-3 jquery-script-center">
 				<table class="table bg-primary table-responsive overflow-auto">
 					<thead>
 						<tr>
@@ -58,68 +58,40 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {
 					</thead>
 					<tbody>
 						<tr>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">05:00 - 11:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">05:00 - 11:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">05:00 - 11:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">05:00 - 11:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">05:00 - 11:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">05:00 - 11:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">05:00 - 11:00</label>
-							</td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">05:00 - 11:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">05:00 - 11:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">05:00 - 11:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">05:00 - 11:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">05:00 - 11:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">05:00 - 11:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">05:00 - 11:00</label></td>
 						</tr>
 						<tr>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">11:00 - 17:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">11:00 - 17:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">11:00 - 17:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">11:00 - 17:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">11:00 - 17:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">11:00 - 17:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">11:00 - 17:00</label>
-							</td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">11:00 - 17:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">11:00 - 17:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">11:00 - 17:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">11:00 - 17:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">11:00 - 17:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">11:00 - 17:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">11:00 - 17:00</label></td>
 						</tr>
 						<tr>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">17:00 - 23:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">17:00 - 23:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">17:00 - 23:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">17:00 - 23:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">17:00 - 23:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">17:00 - 23:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">17:00 - 23:00</label>
-							</td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">17:00 - 23:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">17:00 - 23:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">17:00 - 23:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">17:00 - 23:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">17:00 - 23:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">17:00 - 23:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">17:00 - 23:00</label></td>
 						</tr>
 						<tr>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">23:00 - 05:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">23:00 - 05:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">23:00 - 05:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">23:00 - 05:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">23:00 - 05:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">23:00 - 05:00</label>
-							</td>
-							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light"><input type="checkbox">23:00 - 05:00</label>
-							</td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">23:00 - 05:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">23:00 - 05:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">23:00 - 05:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">23:00 - 05:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">23:00 - 05:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">23:00 - 05:00</label></td>
+							<td class="btn-group-toggle text-center" data-toggle="buttons"><label class="btn btn-light rounded"><input type="checkbox">23:00 - 05:00</label></td>
 						</tr>
 					</tbody>
 				</table>
