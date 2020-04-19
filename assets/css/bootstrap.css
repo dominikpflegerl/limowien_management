@@ -51,23 +51,26 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-/* here the rules for small windows */
-@media (max-width: 500px) { 
+@media (max-width : 800px) {
 	body {
 		width: 100% !important;
 	}
+  .navbar-desktop {
+  	display: none !important;
+  }
+
 }
 
-@media (min-width: 500px) and (max-width: 1200px) { 
+@media (min-width: 800px) and (max-width: 1500px) {
 	body {
 		width: 90% !important;
 	}
 }
 
-/* here the rules for windows between 500px and 900px */
-@media (min-width: 1200px) {
+
+@media (min-width: 1500px) {
 	body {
-		width: 66% !important;
+		width: 75% !important;
 	}
 	.navbar-admin {
 		margin-left: 3rem !important;
@@ -75,12 +78,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 	}
 }
 
-@media (max-width : 1200px) {
-  .navbar-desktop {
-  	display: none !important;
-  }
 
-}
 
 body {
   margin: 0;

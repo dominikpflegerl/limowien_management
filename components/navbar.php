@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl navbar-dark bg-primary rounded navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded navbar-fixed-top">
   <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
 	  <span class="navbar-toggler-icon my-1"></span><img src="/assets/images/icon.png" style="width:32px" class="ml-3">
   </button>

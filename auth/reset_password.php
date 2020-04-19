@@ -4,12 +4,12 @@ session_start();
  
 // Check if the user is logged in, if not then redirect to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: index.php");
+    header("location: /index.php");
     exit;
 }
  
 // Include config file
-require_once "../php/connect_db.php";
+require_once "/assets/php/connect_db.php";
  
 // Define variables and initialize with empty values
 $new_password = $confirm_password = "";
