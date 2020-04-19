@@ -3,7 +3,6 @@
 	  <span class="navbar-toggler-icon my-1"></span><img src="/assets/images/icon.png" style="width:32px" class="ml-3">
   </button>
   <div class="collapse navbar-collapse mb-2 mt-1" id="navbarSupportedContent-333">
-		<img src="/assets/images/icon.png" style="width:32px" class="mr-3 navbar-desktop">
 		<!-- LEFT SIDE -->
     <ul class="navbar-nav mr-aut">
       <li class="nav-item">
