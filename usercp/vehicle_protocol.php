@@ -79,7 +79,7 @@ $date = date('d.m.Y H:i', time());
 	</script>
 </head>
 	
-<body class="mx-auto">
+<body class="mx-auto bg-transparent">
  	<div class="p-3">
 		
 		<!--Navbar -->

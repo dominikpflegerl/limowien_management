@@ -20,8 +20,8 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {he
 	<!-- Stylesheets END -->
 </head>
 
-<body class="mx-auto">
- 	<div class="bg-white p-3">
+<body class="mx-auto bg-transparent">
+ 	<div class="p-3">
 		<!--Navbar -->
 		<?php include_once('../components/navbar.php')	?>
   	<!--/.Navbar -->

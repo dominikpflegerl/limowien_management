@@ -36,7 +36,7 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </head>
 
-<body class="mx-auto">
+<body class="mx-auto bg-transparent">
  	<div class="p-3">
 		<!--Navbar -->
 		<?php include_once('../components/navbar.php')	?>

@@ -20,20 +20,21 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {he
 	<!-- Stylesheets END -->
 </head>
 
-<body class="mx-auto">
+<body class="mx-auto bg-transparent">
  	<div class="p-3">
 		<!--Navbar -->
 		<?php include_once('components\navbar.php')	?>
   	<!--/.Navbar -->
-		<div class="p-3">
+		<div class="py-3 px-4 mt-3 bg-primary rounded">
 			<h1>News</h1>
 			<p>
 				Hier stehen aktuelle News für die Limowien-Mitarbeiter, amiright?
-				
-				right?
-				
-				
-				RIIIIIIIIGHHHHHHT? FUCK THIS CORONA VIRUS IN MY STUPID SEXY GAY BUTT
+			</p>
+		</div>
+		<div class="py-3 px-4 mt-3 bg-primary rounded">
+			<h1>News</h1>
+			<p>
+				Hier stehen aktuelle News für die Limowien-Mitarbeiter, amiright?
 			</p>
 		</div>
 	</div>
