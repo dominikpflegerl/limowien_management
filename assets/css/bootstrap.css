@@ -45,6 +45,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background-color: #888888;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -61,23 +62,27 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
+@media (min-width: 801px) and (max-width: 1500px) {
 	body {
 		width: 90% !important;
 	}
 }
 
-
 @media (min-width: 1500px) {
 	body {
 		width: 75% !important;
 	}
-	.navbar-admin {
-		margin-left: 3rem !important;
-		background: rgba(134,0,2,0.83);
-	}
 }
 
+@media (min-width: 992px) {
+	.navbar-admin {
+		margin-left: 3rem !important;
+		background: rgba(134,0,2,0.83); 
+		border-radius: 0.25rem !important;
+		border-bottom-left-radius: 0rem !important;
+		border-bottom-right-radius: 0rem !important;
+	}
+}
 
 
 body {
