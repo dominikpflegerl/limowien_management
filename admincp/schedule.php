@@ -3,7 +3,7 @@
 session_start();
 // Check if the user is logged in, if not then redirect him to login page
 if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {
-  header( "location: auth/login.php" );
+  header( "location: ../auth/login.php" );
   exit;
 }
 ?>
@@ -39,11 +39,14 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {
 <body class="mx-auto">
  	<div class="p-3">
 		<!--Navbar -->
-		<?php include_once('components\navbar.php')	?>
+		<?php include_once('../components/navbar.php')	?>
   	<!--/.Navbar -->
 		
 		<div class="py-3 px-4 mt-3 bg-primary rounded">
-			<div class="mt-3 jquery-script-center">
+			
+			<h1>Dienstplan</h1>
+			
+			<div class="mt-3">
 				<table class="table bg-primary table-responsive overflow-auto">
 					<thead>
 						<tr>
