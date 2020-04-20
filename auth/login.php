@@ -121,7 +121,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<div class="wrapper fadeInDown">
 		<div id="formContent">
 			<!-- Icon -->
-			<div class="fadeIn first pt-5 pb-4">
+			<div class="fadeIn first py-4">
 				<img src="../assets/images/logo.png" id="icon" alt="Logo" />
 			</div>
 
@@ -130,10 +130,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				<!-- Username -->
 				<input type="text" name="username" class="fadeIn second" autocomplete="off" placeholder="Benutzername" value="<?php echo $username; ?>">
 				<!-- Password -->
-				<input type="password" name="password" class="fadeIn third" placeholder="Passwort"> <br>
-					<span class="help-block" style="color: darkred"><?php echo $password_err; ?></span><br>
+				<input type="password" name="password" class="fadeIn third" placeholder="Passwort" value="<?php echo $password; ?>"> <br>
 				<!-- Submit -->
-				<input type="submit" class="fadeIn fourth" value="EINLOGGEN">
+				<input type="submit" class="button fadeIn fifth button-primary" value="LOGIN">
 			</form>
 		</div>
 	</div>

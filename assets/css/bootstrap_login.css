@@ -8,12 +8,16 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 	backdrop-filter: blur(7px);
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   height: 100vh;
 }
 
 
 /* STRUCTURE */
+
+#icon {
+  width: 100%;
+}
 
 .wrapper {
   display: flex;
@@ -21,75 +25,26 @@ body {
   flex-direction: column; 
   justify-content: center;
   width: 100%;
-  min-height: 100%;
-  padding: 20px;
+  min-height: 75%;
+  padding: 0 20px;
+  margin: 0;
 }
 
 #formContent {
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
   background: #222324;
-  padding: 30px;
+  padding: 1rem 3em;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   position: relative;
-  padding: 0px;
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
 	border-color: white;
   text-align: center;
 }
 
-#formFooter {
-  background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
-  padding: 25px;
-  text-align: center;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-}
-
-
 /* FORM TYPOGRAPHY*/
-
-input[type=button], input[type=submit], input[type=reset]  {
-	color: #222324;
-  background-color: #b69862;
-  
-	border: none;
-  border-radius: 4px;
-	-webkit-border-radius: 4px;
-
-  padding: 20px 25%;
-	margin: 0px 0px 30px 0px;
-
-	display: inline-block;
-	
-  text-align: center;
-  text-decoration: none;
-	font-weight: bold;
-  
-  font-size: 100%;
-	text-transform: uppercase;
-
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-	color: black;
-}
-
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -o-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-}
 
 input[type=text], 
 input[type=password]{
@@ -100,9 +55,9 @@ input[type=password]{
   border-bottom: 4px solid darkgrey;
 	border-radius: 2px;
 
-  padding: 16px 10px;
-	margin: 10px 3px;
-  width: 85%;
+  padding: 0.75rem;
+	margin-bottom: 1rem !important;
+  width: 100%; 
 	
   display: inline-block;
 
@@ -123,6 +78,61 @@ input[type=password]:placeholder {
   color: white;
 }
 
+@media (max-width:1200px) {
+  .button {
+    
+  }
+}
+
+.button {
+  border-radius: 4px;
+	-webkit-border-radius: 4px;
+  
+  width: 100%;
+  padding: 0.75rem 0 !important;
+  margin: 1.5rem 0 !important;
+
+	display: inline-block;
+	
+  text-align: center;
+  text-decoration: none;
+	font-weight: bold;
+  font-size: 100%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+	color: white;
+  border: white solid 2px;
+  background-color: transparent;
+}
+
+.button:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.button-primary {
+  color: #222324;
+  background-color: #b69862;
+  
+	border: #b69862 solid 2px;
+}
+
+.button-secondary {
+  color: #b69862;
+  background-color: transparent;
+  
+	border: #b69862 solid 2px;  
+}
 
 
 /* ANIMATIONS */
@@ -213,7 +223,3 @@ input[type=password]:placeholder {
 *:focus {
     outline: none;
 } 
-
-#icon {
-  width: 80%;
-}
