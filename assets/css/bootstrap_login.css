@@ -2,14 +2,26 @@
 /* BASIC */
 
 body {
-  background-image: url('/assets/images/background.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-	backdrop-filter: blur(7px);
   font-family: sans-serif;
   height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: #888888;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url('/assets/images/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    backdrop-filter: blur(7px);
+  }
 }
 
 
