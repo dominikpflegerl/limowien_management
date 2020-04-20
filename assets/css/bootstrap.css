@@ -45,7 +45,15 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	background-color: #888888;
+  height: 100vh;
+  
+  background-image: url('/assets/images/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+	backdrop-filter: blur(7px);
+  background-color: #828282
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
