@@ -33,7 +33,8 @@ $date = date('d.m.Y H:i', time());
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css">
 	<script src="https://malsup.github.io/min/jquery.form.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/1.8.2/autoNumeric.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -69,8 +70,11 @@ $date = date('d.m.Y H:i', time());
 			}	else {
 				Swal.fire({
 					type: 'error',
-					title: 'Fahrzeug auswählen!',
-					timer: 0
+          icon: 'error',
+					title: '<h1 style="color:white">Fahrzeug auswählen!</h1>',
+					timer: 0,
+          background: '#231f1c',
+          confirmButtonColor: '#b69862',
 				})
 			}
 			console.log(selectedID);
@@ -95,7 +99,7 @@ $date = date('d.m.Y H:i', time());
 					<div class="form-group row">
 						<label for="protocol" class="col-3 col-form-label text-white font-weight-bold">Art</label> 
 						<div class="col-auto">
-							<select id="protocol" name="protocol" class="custom-select">
+							<select id="protocol" name="protocol" class="custom-select rounded">
 									<option disabled selected style="display: none" value="0">Protokoll auswählen...</option>
 									<?php  
 										require_once('../assets/php/connect_db.php');
@@ -138,7 +142,7 @@ $date = date('d.m.Y H:i', time());
 					<div class="form-group row">
 						<label for="vehicle" class="col-3 col-form-label text-white font-weight-bold">Fahrzeug</label> 
 						<div class="col-auto">
-							<select id="vehicle" name="vehicle" class="custom-select">
+							<select id="vehicle" name="vehicle" class="custom-select rounded">
 									<option disabled selected style="display: none" value="0">Fahrzeug auswählen...</option>
 									<?php  
 										require_once('../assets/php/connect_db.php');
@@ -158,8 +162,8 @@ $date = date('d.m.Y H:i', time());
 					<label for="mileage" class="col-3 col-form-label text-white font-weight-bold">Kilometerstand</label> 
 					<div class="col-auto">
 						<div class="input-group">
-							<input id="mileage" name="mileage" type="tel" autocomplete="off" onChange="km()" class="form-control" maxlength="6" required>
-							<div class="input-group-append"><span class="input-group-text" id="basic-addon2">km</span></div>
+							<input id="mileage" name="mileage" type="tel" autocomplete="off" onChange="km()" class="form-control rounded-left" maxlength="6" required>
+							<div class="input-group-append"><span class="input-group-text rounded-right" id="basic-addon2">km</span></div>
 						</div>
 					</div>
 				</div>
@@ -170,18 +174,18 @@ $date = date('d.m.Y H:i', time());
 					<label for "location" class="col-3 col-form-label text-white font-weight-bold">Ort</label>  
 					<div class="col-auto">
 						<div class="input-group">
-							<input id="location" name="location" type="text" class="form-control" required>
+							<input id="location" name="location" type="text" class="form-control rounded" required>
 						</div>
 					</div>
 				</div>
 				<!-- Ort Feld ENDE -->
 		
-				<!-- Schaden Buttons -->
+				<!-- Buttons -->
 				<div class="btn-group btn-row pt-3">
 						<button type="submit" id="button" class="btn btn-outline-success mr-3 rounded">Absenden</button>
 						<button type="button" class="btn btn-secondary rounded" onClick="ModalDamageList()">Schadenliste anzeigen</button>
 				</div>
-				<!-- Schaden Buttons ENDE -->
+				<!-- Buttons ENDE -->
 				
 			</form>
 		</div>
@@ -189,7 +193,7 @@ $date = date('d.m.Y H:i', time());
 	<!-- MODAL ListDamage -->
 
 	<div class="modal fade" id="modalListDamage" tabindex="-1" role="dialog" aria-labelledby="modalListDamageTitle" aria-hidden="true">
-		<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+		<div class="modal-dialog modal-xl modal-dialog-centered bg-primary" role="document">
 			<div class="modal-content" align="center">
 				<div class="modal-header">
 					<h5 class="modal-title" id="modalListDamageTitle"></h5>
