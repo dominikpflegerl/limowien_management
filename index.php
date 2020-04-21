@@ -37,6 +37,18 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {he
 				Hier stehen aktuelle News für die Limowien-Mitarbeiter, amiright?
 			</p>
 		</div>
+		<div class="py-3 px-4 mt-3 bg-primary rounded">
+      <h1>News hinzufügen:</h1>
+			<form>
+        <div class="form-group">
+          <input type="text" id="title" name="title" class="form-control bg-info rounded px-2" value="Meeting, am Montag um 17:00 Uhr!">
+        </div>
+        <div class="form-group">
+          <textarea type="text" id="content" name="content" class="form-control rounded px-2" rows="4">Bitte alle am Montag um 17:00 Uhr erscheinen!</textarea>
+        </div>
+        <button type="submit" id="button" class="btn btn-outline-secondary mr-3 rounded">Absenden</button>
+      </form>
+		</div>
 	</div>
 
   <!-- JavaScript -->
