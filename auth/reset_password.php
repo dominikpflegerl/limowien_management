@@ -1,3 +1,13 @@
+<?php
+require_once "../assets/php/auth.php";
+session_start();
+
+// Check if the user is logged in, if not then redirect to login page
+if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
+  header("location: auth/login.php"); exit;
+};
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,17 +33,7 @@
   <!-- own script -->
   <script src="/assets/js/auth.js"></script>  
 </head>
-  
-<?php
-require_once "../assets/php/auth.php";
-session_start();
-update_password();
-// Check if the user is logged in, if not then redirect to login page
-if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
-  header("location: auth/login.php"); exit;
-};
-?>
-  
+
 <body>  
 	<div class="wrapper fadeInDown">
 		<div id="formContent">
@@ -60,3 +60,5 @@ if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
 	</div>  
 </body>
 </html>
+
+<?php update_password(); ?>
