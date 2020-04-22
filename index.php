@@ -1,8 +1,13 @@
 <?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path .= "/assets/php/auth.php";
+  include $path;
 // Initialize the session
 session_start();
 // Check if the user is logged in, if not then redirect him to login page
-if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {header( "location: auth/login.php" );	exit;}
+if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
+  header("location: auth/login.php"); exit;
+};
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +23,13 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {he
   <link rel="stylesheet" href="https://cdn.rawgit.com/pingcheng/bootstrap4-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- Stylesheets END -->
+  
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <link rel="stylesheet" href="/assets/css/sweetalert2_dark.css">
+  
+  <!-- own script -->
+  <script src="/assets/js/auth.js"></script>  
 </head>
 
 <body class="mx-auto bg-transparent">
@@ -41,10 +53,10 @@ if ( !isset( $_SESSION[ "loggedin" ] ) || $_SESSION[ "loggedin" ] !== true ) {he
       <h1>News hinzufügen:</h1>
 			<form>
         <div class="form-group">
-          <input type="text" id="title" name="title" class="form-control bg-info rounded px-2" value="Meeting, am Montag um 17:00 Uhr!">
+          <input type="text" id="title" name="title" class="form-control bg-transparent text-white rounded px-2 py-3" value="Meeting, am Montag um 17:00 Uhr!">
         </div>
         <div class="form-group">
-          <textarea type="text" id="content" name="content" class="form-control rounded px-2" rows="4">Bitte alle am Montag um 17:00 Uhr erscheinen!</textarea>
+          <textarea type="text" id="content" name="content" class="form-control bg-transparent text-white rounded px-2" rows="7">Bitte alle am Montag um 17:00 Uhr erscheinen!</textarea>
         </div>
         <button type="submit" id="button" class="btn btn-outline-secondary mr-3 rounded">Absenden</button>
       </form>
