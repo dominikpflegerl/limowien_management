@@ -128,6 +128,7 @@
   padding: 0.625em;
   overflow-x: hidden;
   transition: background-color 0.1s;
+  padding-bottom: 30vh;
   -webkit-overflow-scrolling: touch; }
   .swal2-container.swal2-backdrop-show {
     background: rgba(25, 25, 26, 0.75); }
@@ -238,7 +239,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 1.25em auto 0; }
+  margin: 1.25em 0; }
   .swal2-actions:not(.swal2-loading) .swal2-styled[disabled] {
     opacity: .4; }
   .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
