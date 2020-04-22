@@ -45,7 +45,7 @@
            Willkommen, <b><?php echo htmlspecialchars($_SESSION["firstname"]); echo " "; echo htmlspecialchars($_SESSION["lastname"]) ?></b>
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item bg-primary" href="/auth/reset_password.php">Passwort ändern</a>
+          <a class="dropdown-item bg-primary" href="/auth/update_password.php">Passwort ändern</a>
           <a class="dropdown-item bg-primary text-muted font-weight-bold" onclick="showLoading(1000)" href="?logout=true">Abmelden</a>
         </div>
       </li>
