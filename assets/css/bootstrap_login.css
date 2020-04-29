@@ -7,22 +7,7 @@ body {
   min-height: -webkit-fill-available;
 }
 
-@media (max-width: 800px) {
-  body {
-    background-color: #888888;
-  }
-}
 
-@media (min-width: 800px) {
-  body {
-    background-image: url('/assets/images/background.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: inherit;
-    backdrop-filter: blur(7px);
-  }
-}
 
 
 /* STRUCTURE */
@@ -54,6 +39,23 @@ body {
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
 	border-color: white;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    min-height: 85%;
+  }
+}
+
+@media (min-width: 0px) {
+  body {
+    background-image: url('/assets/images/background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    backdrop-filter: blur(7px);
+  }
 }
 
 /* FORM TYPOGRAPHY*/
