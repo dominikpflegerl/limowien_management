@@ -1,4 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+<?php  
+$auth = $_SERVER['DOCUMENT_ROOT'];
+$auth .= "/assets/php/auth.php";
+include $auth;
+?>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded my-4 py-3 px-4">
 
   <!-- Menu Button for mobile -->
   <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,12 +15,17 @@
   <div class="collapse navbar-collapse mb-2 mt-1" id="navbarSupportedContent-333">
 		<!-- LEFT SIDE -->
     <ul class="navbar-nav mr-aut">
+      <!-- Home -->
       <li class="nav-item">
 				<a class="nav-link border-bottom font-weight-bold" href="/index.php">Home</a>
       </li>
+      
+      <!-- Dienstplan -->
 			<li class="nav-item">
         <a class="nav-link border-bottom" href="/usercp/schedule.php">Dienstplan</a>
       </li>
+      
+      <!-- Dropdown PKW -->
 			<li class="nav-item dropdown border-bottom">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PKW</a>
         <div class="dropdown-menu dropdown-default bg-primary border-left" aria-labelledby="navbarDropdownMenuLink-333">
@@ -22,6 +33,8 @@
           <a class="dropdown-item bg-primary" href="/usercp/vehicle_damage.php">Schaden</a>
         </div>
       </li>
+      
+      <!-- Admin CP -->
       <?php
       if($_SESSION["role"] == 1) {
         echo '<li class="nav-item dropdown border-bottom navbar-admin">';
@@ -35,7 +48,8 @@
         echo '</div>';
         echo '</li>';
       }
-      ?>  
+      ?> 
+      
     </ul>
 		
 		<!-- RIGHT SIDE -->
