@@ -1,13 +1,10 @@
 <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
-  $path .= "/assets/php/auth.php";
-  include $path;
-// Initialize the session
-session_start();
-// Check if the user is logged in, if not then redirect him to login page
-if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
-  header("location: auth/login.php"); exit;
-};
+  // Initialize the session
+  session_start();
+  // Check if the user is logged in, if not then redirect him to login page
+  if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
+    header("location: auth/login.php"); exit;
+  };
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +17,6 @@ if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/pingcheng/bootstrap4-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- Stylesheets END -->
   
@@ -37,18 +33,10 @@ if (!isset($_SESSION["loggedin"] ) || $_SESSION["loggedin"] !== true) {
 		<!--Navbar -->
 		<?php include_once('components\navbar.php')	?>
   	<!--/.Navbar -->
-		<div class="py-3 px-4 mt-3 bg-primary rounded">
-			<h1>News</h1>
-			<p>
-				Hier stehen aktuelle News für die Limowien-Mitarbeiter, amiright?
-			</p>
-		</div>
-		<div class="py-3 px-4 mt-3 bg-primary rounded">
-			<h1>News</h1>
-			<p>
-				Hier stehen aktuelle News für die Limowien-Mitarbeiter, amiright?
-			</p>
-		</div>
+    
+    <!-- News PHP -->
+    <?php include('assets/php/sql_news.php'); getNews();?>
+    
 		<div class="py-3 px-4 mt-3 bg-primary rounded">
       <h1>News hinzufügen:</h1>
 			<form>
